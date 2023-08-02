@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: #eaf8ea;
+  color: #333333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  text-align: center;
+  color: #4F4F4F;
+  margin-top: 0;
+}
+
+form {
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  color: #4F4F4F;
+}
+
+.form-container {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 93.5%;
+  height: 60px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #CCCCCC;
+  background-color: #F7F7F7;
+  transition: border-color 0.3s ease-in-out;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #8475A7;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #CCCCCC;
+  background-color: #F7F7F7;
+  transition: border-color 0.3s ease-in-out;
+}
+
+button[type="submit"],
+button#play-button {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #8475A7;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button#play-button:hover {
+  background-color: #241D56;
+}
+
+h2 {
+  color: #4F4F4F;
+  margin-top: 20px;
+}
+
+.translation {
+  margin-top: 15px;
+}
+
+.output-container {
+  display: flex;
+  align-items: center;
+}
+
+.output-container p {
+  flex: 3;
+  margin-right: 10px;
+}
+
+.translation {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.translation h2 {
+  color: #575151;
+  margin-top: 0;
+}
+
+.translation p {
+  margin-top: 15px;
+}
+
+.translation button {
+  margin-top: 7px;
+  background-color: #8475a7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.translation button:hover {
+  background-color: #241d56;
+}
+
+.translation button span {
+  margin-right: 10px;
+}

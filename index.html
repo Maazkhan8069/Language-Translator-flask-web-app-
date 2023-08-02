@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MK Translator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="/">
+            <div class="form-container">
+                <div class="form-row">
+                    <label for="sentence">Enter a sentence:</label>
+                    <textarea id="sentence" name="sentence" placeholder="Please enter the text" required></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="inputvalue">Select a language:</label>
+                    <select id="inputvalue" name="inputvalue">
+                        {% for code, name in languages.items() %}
+                        <option value="{{ code }}" {% if language == code %}selected{% endif %}>{{ name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Translate</button>
+                </div>
+            </div>
+        </form>
+        {% if output %}
+        <div class="translation">
+            <h2>Translation:</h2>
+            <div class="output-container">
+                <p id="output">{{ output }}</p>
+                <button id="play-button" onclick="playAudio()">&#128266;</button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
